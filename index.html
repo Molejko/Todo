@@ -14,16 +14,21 @@
         <header>
             <h1>TODO List</h1>
             <div class="new-task">
-                <input type="text" name="" id="">
+                <input type="text" id="task" placeholder="Wpisz treść zadania">
                 <button>DODAJ</button>
             </div>
-            
             <p class="head-info">Nie masz zadań do wykonania. :)</p>
         </header>
+
         <secion class="tasks-container">
             <ul class="tasks-list">
                 <div class="task-box">
                     <li class="task">Zadanie 1</li>
+                    <div class="tools">
+                        <button class="accept"><i class="fas fa-check"></i></button>
+                        <button class="edit">EDIT</button>
+                        <button class="delete"><i class="fas fa-trash-alt"></i></button>
+                    </div>
                 </div>
                 <div class="task-box">
                     <li class="task">Zadanie 2</li>
@@ -35,12 +40,19 @@
                 </div>
                 <div class="task-box">
                     <li class="task">Zadanie 3</li>
+                    <div class="tools">
+                        <button class="accept"><i class="fas fa-check"></i></button>
+                        <button class="edit">EDIT</button>
+                        <button class="delete"><i class="fas fa-trash-alt"></i></button>
+                    </div>
                 </div>
                 
             </ul>
         </secion>
+
         <footer>TODO List made with <i class="fas fa-heart"></i></footer>
+
     </div>
-    
+    <script src="main.js"></script>
 </body>
 </html>
