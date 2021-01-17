@@ -15,14 +15,14 @@
             <h1>TODO List</h1>
             <div class="new-task">
                 <input type="text" id="task" placeholder="Wpisz treść zadania">
-                <button>DODAJ</button>
+                <button class="btn-add">DODAJ</button>
             </div>
             <p class="head-info">Nie masz zadań do wykonania. :)</p>
         </header>
 
-        <secion class="tasks-container">
+        <section class="tasks-container">
             <ul class="tasks-list">
-                <div class="task-box">
+                <!-- <div class="task-box">
                     <li class="task">Zadanie 1</li>
                     <div class="tools">
                         <button class="accept"><i class="fas fa-check"></i></button>
@@ -45,13 +45,21 @@
                         <button class="edit">EDIT</button>
                         <button class="delete"><i class="fas fa-trash-alt"></i></button>
                     </div>
-                </div>
+                </div> -->
                 
             </ul>
-        </secion>
+        </section>
 
         <footer>TODO List made with <i class="fas fa-heart"></i></footer>
 
+    </div>
+
+    <div class="popup-edit">
+        <h3>Edytuj zadanie</h3>
+        <p class="popup-info"></p>
+        <input type="text" class="popup-task" placeholder = "Wpisz treść zadania"> </br>
+        <button class="accept-popup">ZAPISZ</button>
+        <button class = "cancel-popup">ANULUJ</button>
     </div>
     <script src="main.js"></script>
 </body>
