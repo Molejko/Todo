@@ -37,10 +37,15 @@ const prepareEvents = () => {
     $ulList.addEventListener('click', checkBtn);
     $btnCancelPopup.addEventListener('click', cancelPopup);
     $btnAcceptPopup.addEventListener('click', acceptPopup);
+    $newTask.addEventListener('keyup', checkKey);
     // $acceptDel.addEventListener('click', deleteTask);
     // $cancelDel.addEventListener('click', cancelTask);
 }
-
+const checkKey = (e) => {
+    if(e.keyCode === 13) {
+        checkTask();
+    }
+}
 const checkTask = () =>{
     if ($newTask.value === "") {
         $headInfo.innerText = "Wpisz treść zadania!"
